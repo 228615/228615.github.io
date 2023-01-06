@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bobatron</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div id="banner1">
+        <img src="banner.jpg">
+    </div>
+    <!-- Blurred background image -->
+    <div id="background">
+        <img src="lasrak.jpg">
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="menu">
+        <p>Menu</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- Main content area -->
+    <div class="main">
+        <!-- Description of the band -->
+        <div class="description">
+            <h2>About the Band</h2>
+            <p>Bobatron is a rock band from Los Angeles, California. The band was formed in 2010 by lead vocalist and
+                guitarist Bob, who was later joined by Alice on guitar, Charlie on bass, and Dave on drums. Since its
+                inception, Bobatron has released three studio albums and toured extensively across the United States and
+                Europe.</p>
+            <p>Bobatron's music is influenced by classic rock bands such as Led Zeppelin and Black Sabbath, as well as
+                more modern acts like the Arctic Monkeys and the Strokes. The band's sound is characterized by catchy
+                riffs, powerful vocals, and energetic live performances.</p>
+        </div>
+        <div>
+            <img src="coolbob1.jpg">
+        </div>
+    </div>
+    <div class="video-player">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYnFIRc0k6E?controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYnFIRc0k6E" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </div>
+
+    <!-- JavaScript to toggle the dropdown menu -->
+    <script>
+        var menu = document.querySelector('.menu');
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
