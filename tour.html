@@ -32,7 +32,46 @@
 
 
     <div class="main">
-        <!-- PLACE FOR THE MOCKAROO DATA !!!!-->
+      <table id="table">
+          <thead></thead>
+          <tbody></tbody>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("https://my.api.mockaroo.com/Project.json?key=1bf59a30")
+                  .then((res) => res.json())
+                  .then((data) => {
+                    let headers = `
+                    <tr>
+                      <th>Time</th>
+                      <th>Date</th>
+                      <th>Venue name</th>
+                      <th>Venue addres</th>
+                      <th>City</th>
+                      <th>Venue capacity</th>
+                      <th>Support</th>
+                      <th>Price USD</th>
+                    </tr>`;
+                    document.querySelector("thead").innerHTML = headers;
+          
+                    let rows = "";
+                    data.forEach((facility) => {
+                      rows += `
+                        <tr>
+                          <td>${facility.Time}</td>
+                          <td>${facility.Date} </td>
+                          <td>${facility.Venue_name}</td>
+                          <td>${facility.Venue_address}</td>
+                          <td>${facility.City}</td>
+                          <td>${facility.Venue_capacity}</td>
+                          <td>${facility.Support}</td>
+                          <td>${facility.Price_USD}</td>
+                        </tr>
+                      `;
+                    });
+                    document.querySelector("tbody").innerHTML = rows;
+                  });
+              });
+        </script>
 
     </div>
 
