@@ -94,5 +94,24 @@
     padding: 20px;
   }
 
+table#table {
+  width: 100%;
+  background-color: #454545;
+  border-collapse: collapse;
+  border-width: 3px;
+  border-color: #FFFFFF;
+  border-style: double;
+  color: #FFFFFF;
+}
 
+table#table td, table#table th {
+  border-width: 3px;
+  border-color: #FFFFFF;
+  border-style: double;
+  padding: 4px;
+}
+
+table#table thead {
+  background-color: #941107;
+}
  
