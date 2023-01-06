@@ -1,63 +1,72 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <title>Bobatron</title>
-  </head>
-  <body>
-    <!-- Add a navigation bar at the top of the page -->
-    <nav>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#music">Music</a>
-      <a href="#tour">Tour</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <!-- Add a main element to contain the page content -->
-    <main>
-    
-        <!--- Add a banner image at the top of the page -->
-        <img src="bobatron.jpg" alt="Bobatron banner" style="width: 100%;">
-        
-        <!-- Add a welcome message and some basic information about the band -->
-        <div class="page-content">
-          <h1>Welcome to the official Bobatron website!</h1>
-          <p>Bobatron is a rock band from Los Angeles, California. The band is made up of four members: Bob (vocals and guitar), Alice (guitar), Charlie (bass), and Dave (drums). Since forming in 2010, Bobatron has released three studio albums and toured extensively across the United States and Europe.</p>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div id="banner1">
+        <img src="banner.jpg">
+    </div>
+    <!-- Blurred background image -->
+    <div id="background">
+        <img src="lasrak.jpg">
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="menu">
+        <p>Menu</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Avarage Ticket Price</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- Main content area -->
+    <div class="main">
+        <!-- Description of the band -->
+        <div class="description">
+            <h2>About the Band</h2>
+            <p>Bobatron is a rock band from Los Angeles, California. The band was formed in 2010 by lead vocalist and
+                guitarist Bob, who was later joined by Alice on guitar, Charlie on bass, and Dave on drums. Since its
+                inception, Bobatron has released three studio albums and toured extensively across the United States and
+                Europe.</p>
+            <p>Bobatron's music is influenced by classic rock bands such as Led Zeppelin and Black Sabbath, as well as
+                more modern acts like the Arctic Monkeys and the Strokes. The band's sound is characterized by catchy
+                riffs, powerful vocals, and energetic live performances.</p>
         </div>
-        
-        <!-- Add a section with links to the band's social media profiles -->
-        <div class="page-content">
-          <h2>Follow us on social media</h2>
-          <p>Stay up to date with all the latest news and tour announcements by following us on social media:</p>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
+        <div>
+            <img src="coolbob1.jpg">
         </div>
-        
-        <!-- Add a section with the dates of the band's upcoming concerts -->
-        <div class="page-content">
-          <h2>Upcoming concerts</h2>
-          <p>Check out our tour schedule to see when we'll be coming to a city near you:</p>
-          <ul>
-            <li>January 20th - Los Angeles, CA</li>
-            <li>January 25th - San Francisco, CA</li>
-            <li>January 30th - Portland, OR</li>
-          </ul>
-        </div>
-        
-        
-        <!-- banner -->
-<img src="https://via.placeholder.com/1200x300" alt="Bobatron banner" style="width: 100%;">
+    </div>
+    <div class="video-player">
 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYnFIRc0k6E?controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYnFIRc0k6E" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
 
-<div class="page-content">
-  <h1>About Bobatron</h1>
-  <p>Bobatron is a rock band from Los Angeles, California. The band was formed in 2010 by lead vocalist and guitarist Bob, who was later joined by Alice on guitar, Charlie on bass, and Dave on drums. Since its inception, Bobatron has released three studio albums and toured extensively across the United States and Europe.</p>
-  <p>Bobatron's music is influenced by classic rock bands such as Led Zeppelin and Black Sabbath, as well as more modern acts like the Arctic Monkeys and the Strokes. The band's sound is characterized by catchy riffs, powerful vocals, and energetic live performances.</p>
-</div>
+    </div>
 
+    <!-- JavaScript to toggle the dropdown menu -->
+    <script>
+        var menu = document.querySelector('.menu');
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('open');
+        });
+    </script>
+</body>
 
-
-
-
+</html>
