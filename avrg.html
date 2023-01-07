@@ -35,6 +35,115 @@
         <div class="container">
             <h1>Ticket Prices </h1>
             <canvas id="myChart" style="width:900px"></canvas>
+    <script>
+            getData();
+async function getData() {
+  const response = await fetch('https://my.api.mockaroo.com/Project.json?key=1bf59a30');
+  const data = await response.json();
+  console.log(data);
+  length = data.length;
+  console.log(length);
+  labels = [];
+  values = [];
+  for (i = 0; i < length; i++) {
+    labels.push(data[i].Venue_name);
+    values.push(data[i].Price_USD);
+  }
+  new Chart(document.getElementById("myChart"), {
+    type: 'pie',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "Price_USD",
+          backgroundColor: ["#3a90cd",
+            "#8e5ea2",
+            "#3bba9f",
+            "#e8c3b9",
+            "#c45850",
+            "#CD9C5C",
+            '#701AF7', 
+            '#C32E03', 
+            '#D5C11E', 
+            '#CF9C0F', 
+            '#9B7FA7',
+             '#F4F36E',
+              '#657CF5',
+               '#1E8AAB', 
+               '#E47DEE', 
+               '#EF0B71',
+                '#821888', 
+                '#E060EC', 
+                '#C3AEEC',
+                 '#5D1382',
+                  '#071ff0',
+                   '#B892AE',
+             '#D45B7B',
+              '#682AEF',
+               '#ACE5B3', 
+               '#4768D6', 
+               '#7CECF9', 
+               '#197CFF', 
+               '#9FDEB9', 
+               '#31BE36', 
+               '#AFE4A5', 
+               '#E37E2B', 
+               '#687AD6', 
+               '#4FE41A', 
+               '#95A2C8', 
+               '#6A80B1',
+                '#778925',
+                 '#E6E5EB', 
+                 '#9DA7E7', 
+                 '#56DED4', 
+                 '#C60D72', 
+                 '#C2BC89', 
+                 '#33116A',
+                  '#CAE890', 
+                  '#941FCF', 
+                  '#E07FA2', 
+                  '#10D504', 
+                  '#F691CE', 
+                  '#449568', 
+                  '#4F7E00', 
+                  '#70D747', 
+                  '#37D30E', 
+                  '#BFEA4C', 
+                  '#377C6B', 
+                  '#4A8E73', 
+                  '#91B1FF', 
+                  '#AB36CB', 
+                  '#77E882', 
+                  '#25153A', 
+                  '#B589FF', 
+                  '#FEB5AA', 
+                  '#18C7F5', 
+                  '#776C43', 
+                  '#B04DF7', 
+                  '#8DF65C', 
+                  '#320C27', 
+                  '#B6DF4D', 
+                  '#FD7F11', 
+                  '#AD2243', 
+                  '#234BFC', 
+                  '#8A17D1', 
+                  '#4E30CC', '#B96784', '#77D72E', '#2A1511', '#0DEDC4', '#F367E4', '#569F62', '#689D78', '#C18472', '#2E5CFF', '#6BFA60',
+            '#53BC39', '#E52989', '#1FEAE7', '#7FB7A9', '#6698C1', '#393644', '#BDF57C', '#F23182', '#4CA4AA', '#605FCF', '#469302', '#4FA18C', '#DA8CA6', '#6FA914', '#0CE789', '#C45AED', '#EB46FC', '#4F3752', '#970397', '#F09345', '#188B89', '#421C92', '#D847E9', '#4E1EF4', '#CBC0F6', '#271696', '#A430F8', '#D8C5D6', '#4BD8ED',
+            '#88845A', '#C45C29', '#AFA75A', '#34F808', '#697FAB', '#00B1C4', '#B2267A', '#83CF21', '#5F376A', '#0A6EF1', '#5113A7', '#8659B9', '#B2D2B2', '#849893', '#1642A5', '#A2CB4E', '#51EA35', '#59B487', '#FB9B14', '#F76572', '#441399', '#6EEA7E', '#C5A5DF', '#2131DD', '#99DF8B', '#677C0A', '#E811EA', '#435F0C', '#BB69BF', '#6D792E', '#4A9E27', '#970870', '#6C4CA9', '#66A48E', '#D9E4BC', '#A63819', '#F48ADA', '#6ED41F', '#C70F8C', '#4EBA41', '#AB1DE4', '#41A079', '#BE0848', '#62796F', '#B61047', '#7A0ADC', '#98ABCC', '#7CEA1D', '#E8A062', '#31111E', '#A43C44', '#731402', '#7DC252', '#840F39', '#919F83', '#8F9951', '#F1EFA0', '#90A1C0', '#6BEA5A', '#C861E5', '#542E2A', '#283EF2', '#F630E5', '#CB64DE', '#7D019A', "#40E0D0"],
+          data: values
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Ticket proices'
+      }
+    }
+  });
+}
+                         </script>
         </div>
         
 
