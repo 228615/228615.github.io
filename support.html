@@ -36,7 +36,7 @@
         <div class="container">
             <canvas id="myChart" style="width:900px"></canvas>
         </div>
-        
+       <script> 
        new Chart(document.getElementById("myChart"), {
   type: 'bar',
   data: {
@@ -59,10 +59,11 @@
     legend: { display: false },
     title: {
       display: true,
-      text: 'Support band occurence'
+      text: 'Predicted world population (millions) in 2050'
     }
   }
 });
+        </script>
 
     </div>
 
@@ -78,6 +79,7 @@
             menu.classList.toggle('open');
         });
     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
 </body>
 
 </html>
