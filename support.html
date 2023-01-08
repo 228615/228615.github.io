@@ -36,35 +36,7 @@
         <div class="container">
             <canvas id="myChart" style="width:900px"></canvas>
         </div>
-       <script> 
-       new Chart(document.getElementById("myChart"), {
-  type: 'bar',
-  data: {
-    labels: ["Cool Tooth Fairy Attack", "Flight of the Grey Cockroaches", "Cool Kid Bob", "Saving Bob", "Working Oslo"],
-    datasets: [
-      {
-        label: "Concerts played with Bobatron:",
-        backgroundColor: ["#3e95cd", "#8E5ea2","#3cba9f","#e8c3b9","#c45850"],
-        data: [19,18,24,19,20],
-        
-      }
-    ]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      },
-    },
-    legend: { display: false },
-    title: {
-      display: true,
-      text: 'Predicted world population (millions) in 2050'
-    }
-  }
-});
-        </script>
-
+      
     </div>
 
 
@@ -80,6 +52,7 @@
         });
     </script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
