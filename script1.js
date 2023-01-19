@@ -8,7 +8,7 @@ new Chart(document.getElementById("myChart"), {
       {
         label: "Concerts played with Bobatron:",
         backgroundColor: ["#3e95cd", "#8E5ea2","#3cba9f","#e8c3b9","#c45850"],
-        data: [19,18,24,19,20],
+        data: [20,17,20,19,24],
         
       }
     ]
