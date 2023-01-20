@@ -57,7 +57,7 @@
     background-color: #555;
   }
 
-  /* Style the dropdown menu when it is open */
+  /* open */
   .menu.open ul {
     display: block;
   }
@@ -72,7 +72,7 @@
     font-size: 25px;
   }
 
-  /* blurred background image */
+  
   #background {
     position: absolute;
     top: 0;
@@ -84,7 +84,7 @@
     backdrop-filter: blur(100px);
   }
 
-  /* main content area */
+  /* maain */
   .main {
     display: flex;
     justify-content: space-around;
