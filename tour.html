@@ -38,6 +38,7 @@
                 fetch("https://my.api.mockaroo.com/Project.json?key=1bf59a30")
                   .then((res) => res.json())
                   .then((data) => {
+                    sessionStorage.setItem('data', JSON.stringify(data));
                     let headers = `
                     <tr>
                       <th>Time</th>
